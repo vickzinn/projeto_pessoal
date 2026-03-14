@@ -1,0 +1,90 @@
+/* 1. RESET PARA O NAVEGADOR NÃO ATRAPALHAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. FUNDO DA PÁGINA */
+body {
+    background-color: #121212 !important; /* Cinza quase preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 3. A CAIXA DA CALCULADORA */
+.calculadora {
+    background-color: #000000 !important;
+    padding: 20px;
+    border-radius: 20px;
+    width: 340px;
+    border: 2px solid #333;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}
+
+/* 4. O VISOR - ARRUIMADO PARA NÃO ESTOURAR */
+.visor {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    min-height: 80px;
+    border: 1px solid #444;
+    
+    /* --- ADICIONE ISSO --- */
+    width: 100%;             /* Garante que o visor não cresça mais que a calculadora */
+    overflow: hidden;        /* Esconde o que passar do tamanho da caixa */
+    white-space: nowrap;     /* Impede que o número quebre em duas linhas */
+    text-overflow: ellipsis; /* Se o número for muito grande, coloca '...' no final */
+}
+
+/* 5. A GRADE DE BOTÕES (4 COLUNAS) */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* 6. ESTILO GERAL DOS BOTÕES */
+.btn {
+    background-color: #000000;
+    color: #ffffff;           
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* 7. O BOTÃO ZERO (OCUPA 2 ESPAÇOS) */
+.zero {
+    grid-column: span 2;
+}
+
+/* 8. CORES DIFERENTES PARA OPERADORES (OPCIONAL) */
+.btn-operador, .btn-cientifico {
+    background-color: #1a1a1a;
+}
+
+.btn-limpar {
+    background-color: #331111; /* Um vermelho bem escuro */
+}
+
+.btn-igual {
+    background-color: #113311; /* Um verde bem escuro */
+}
+
+/* 9. O EFEITO DE PISCAR (MUITO IMPORTANTE) */
+/* Quando o JS colocar a classe 'ativo', o botão fica branco */
+.btn.ativo {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    transform: scale(0.95);
+}

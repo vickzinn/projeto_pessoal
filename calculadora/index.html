@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <div class="visor" id="visor">0</div>
+
+        <div class="botoes">
+            <button class="btn btn-cientifico" onclick="apertarBotao(this)">√</button>
+            <button class="btn btn-cientifico" onclick="apertarBotao(this)">x!</button>
+            <button class="btn btn-cientifico" onclick="apertarBotao(this)">hyp</button>
+            <button class="btn btn-limpar" onclick="apertarBotao(this)">C</button>
+
+            <button class="btn btn-cientifico" onclick="apertarBotao(this)">sin</button>
+            <button class="btn btn-cientifico" onclick="apertarBotao(this)">cos</button>
+            <button class="btn btn-cientifico" onclick="apertarBotao(this)">tan</button>
+            <button class="btn btn-operador" onclick="apertarBotao(this)">÷</button>
+
+            <button class="btn btn-numero" onclick="apertarBotao(this)">7</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">8</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">9</button>
+            <button class="btn btn-operador" onclick="apertarBotao(this)">×</button>
+
+            <button class="btn btn-numero" onclick="apertarBotao(this)">4</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">5</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">6</button>
+            <button class="btn btn-operador" onclick="apertarBotao(this)">-</button>
+
+            <button class="btn btn-numero" onclick="apertarBotao(this)">1</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">2</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">3</button>
+            <button class="btn btn-operador" onclick="apertarBotao(this)">+</button>
+
+            <button class="btn btn-numero zero" onclick="apertarBotao(this)">0</button>
+            <button class="btn btn-numero" onclick="apertarBotao(this)">.</button>
+            <button class="btn btn-igual" onclick="apertarBotao(this)">=</button>
+        </div>
+    </div>
+
+    <script src="botao.js"></script>
+</body>
+</html>
