@@ -1,2 +1,2 @@
 # projeto_pessoal
-só um lugar parecido com um playground, com jogos que ''eu'' fiz
+só um local para colocar meus projetos pessoais para aumentar meu repercutório aqui no github
