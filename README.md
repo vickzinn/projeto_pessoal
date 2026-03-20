@@ -1,2 +1,1 @@
-# projeto_pessoal
-só um local para colocar meus projetos pessoais para aumentar meu repercutório aqui no github
+apenas um local para colocar projetos que eu fiz, para aumentar meu repertório aqui no github
